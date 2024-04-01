@@ -39,7 +39,7 @@ START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store privat
 
 try:
     ADMINS=[7085541484]
-    for x in (os.environ.get("ADMINS", "5115691197 6273945163 6103092779 5231212075").split()):
+    for x in (os.environ.get("ADMINS", ).split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
@@ -54,7 +54,7 @@ PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" e
 DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'True'
 
 BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
-USER_REPLY_TEXT = "❌Don't send me messages directly I'm only File Share bot ! \n 👨‍💻 Bot Devloper @fameor"
+USER_REPLY_TEXT = "❌Don't send me messages directly I'm only File Share bot ! \n
 
 ADMINS.append(OWNER_ID)
 ADMINS.append(7085541484)
